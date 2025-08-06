@@ -813,7 +813,7 @@ public final class CGIServlet extends HttpServlet {
         // overload to make sure that it wont break in some weird scenario. 
         protected String[] findCGI(String pathInfo, String webAppRootDir, String contextPath, String servletPath,
                 String cgiPathPrefix) {
-                return findCGI(contextPath, servletPath, pathInfo, cgiPathPrefix)
+                return findCGI(contextPath, servletPath, pathInfo, cgiPathPrefix);
                 
         }
         
