@@ -126,7 +126,7 @@ public abstract class AbstractTestResourceSet {
             return;
         }
         WebResource webResource = resourceRoot.getResource(mount + "d1");
-        Assert.assertTrue(webResource.exists());
+        Assert.assertFalse(webResource.exists());
         Assert.assertEquals(mount + "d1", webResource.getWebappPath());
     }
 
